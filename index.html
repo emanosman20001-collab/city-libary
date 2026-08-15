@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Library</title>
+</head>
+
+<body>
+
+    <!-- ============ HOME SECTION ============ -->
+    <!-- This is the only section visible when the page first loads -->
+    <div id="homeSection" class="section">
+
+        <div class="icon">📚</div>
+        <h1>City Library</h1>
+        <p class="greeting">Welcome, reader!</p>
+
+        <p class="intro">
+            City Library is a quiet place full of stories, knowledge, and
+            adventures waiting on the shelves. Whether you love mysteries,
+            history, or science, you will always find a book here that feels
+            like it was chosen just for you.
+        </p>
+
+        <div class="buttons">
+            <button id="goToBooksBtn" class="primary-btn">Explore Books</button>
+            <button id="goToQuizBtn" class="secondary-btn">Fun Quizzes</button>
+            <button id="goToAboutBtn" class="secondary-btn">About Us</button>
+        </div>
+
+    </div>
+
+    <!-- ============ BOOKS SECTION ============ -->
+    <!-- Hidden by default (see style.css) -->
+    <div id="booksSection" class="section">
+
+        <h1>Explore Books</h1>
+        <p class="intro">Here you will find a few of our favorite reads.</p>
+
+        <!-- I can add the book list/cards here later -->
+
+        <button id="backFromBooksBtn" class="secondary-btn">Back to Home</button>
+
+    </div>
+
+    <!-- ============ QUIZ SECTION ============ -->
+    <!-- Hidden by default (see style.css) -->
+    <div id="quizSection" class="section">
+
+        <h1>Fun Quiz</h1>
+
+
+        <p id="question">What is the largest library in the world?</p>
+        <button class="answer" id="choice1"">The British Library</button>
+    <button class=" answer" id="choice2">The Library of Congress</button>
+        <button class="answer" id="choice3">The National Library of China</button>
+        <p id="result"></p>
+        <button id="nextBtn" class="secondary-btn">Next Question</button>
+        <button id="backFromQuizBtn" class="secondary-btn">Back to Home</button>
+    </div>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <!-- Hidden by default (see style.css) -->
+    <div id="aboutSection" class="section">
+
+        <h1>About Us</h1>
+        <p class="intro">
+            City Library has been serving readers for years, offering a calm
+            space to read, study, and discover new worlds.
+        </p>
+
+        <button id="backFromAboutBtn" class="secondary-btn">Back to Home</button>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdf6ec;
+    color: #3b2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.section {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fffaf2;
+    border: 2px solid #8b5e34;
+    border-radius: 12px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 6px 6px 0px #d8c9a3;
+}
+
+#booksSection,
+#quizSection,
+#aboutSection {
+    display: none;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #5a3e2b;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.greeting {
+    font-size: 18px;
+    color: #7a6a58;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+p.intro {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #4a3b2f;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px 26px;
+    border-radius: 6px;
+    border: 2px solid #8b5e34;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.primary-btn {
+    background-color: #8b5e34;
+    color: #fffaf2;
+}
+
+.primary-btn:hover {
+    background-color: #b37846;
+}
+
+.secondary-btn {
+    background-color: #8b5e34;
+    color: #fffaf2;
+}
+
+.secondary-btn:hover {
+    background-color: #b37846;
+}
+
+/* Quiz-specific styling */
+#question {
+    font-size: 18px;
+    color: #5a3e2b;
+    margin-bottom: 20px;
+}
+
+.answer {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: white;
+    color: #8b5e34;
+}
+
+.answer:hover {
+    background-color: #8b5e34;
+    color: white;
+}
+
+#result {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
